@@ -5,12 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #bbb5b5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style-type: none;
+  
 }
 
 a {
@@ -23,6 +28,7 @@ a:hover {
 }
 
 body {
+  background-image: url(./assets/1.png);
   margin: 0;
   display: flex;
   place-items: center;
@@ -33,6 +39,17 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.item{
+  width: 350px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+  /* justify-items: center;
+  justify-content: center; */
 }
 
 button {
@@ -54,15 +71,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+img {
+  height: auto;
+  width: 200px;
 }
+
